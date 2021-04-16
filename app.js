@@ -27,7 +27,7 @@ app.post('/', function(req, res) {
       }
     }]
 
-  }
+  };
 
 
   const jsonData = JSON.stringify(data);
@@ -52,12 +52,12 @@ app.post('/', function(req, res) {
 });
 app.post('/failure',function(req,res){
   res.redirect("/");
-})
+});
 
 
 app.listen(process.env.PORT ||3000, function() {
-  console.log("server is running on port 3000")
-})
+  console.log("server is running on port 3000");
+});
 
 // API KEY
 // 4863d99c9663ff80f7bb0ff6212f168e-us1
